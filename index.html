@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../lab_16/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../lab_16/css/skeleton.css">
+</head>
+<body>
+<header>
+	<h1>Portfolio</h1>
+	<nav>
+    	<ul>
+        	<li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container" ng-app="portfolioApp" ng-controller="projectCtrl">
+<pull ng-repeat="project in projects"></pull>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="../lab_16/script.js"></script>
+</body>
+
+</html>
